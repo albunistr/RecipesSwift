@@ -10,9 +10,10 @@
 		E23CE1392BF4B3FA00512AB1 /* RecipesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23CE1382BF4B3FA00512AB1 /* RecipesList.swift */; };
 		E23CE13B2BF4C6A800512AB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23CE13A2BF4C6A800512AB1 /* Main.storyboard */; };
 		E23CE13D2BF4D21500512AB1 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23CE13C2BF4D21500512AB1 /* DetailVC.swift */; };
+		E2426B892BF6077E00E15E40 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2426B882BF6077E00E15E40 /* ContentViewController.swift */; };
+		E2426B8B2BF607B200E15E40 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2426B8A2BF607B200E15E40 /* PageViewController.swift */; };
 		E28E843D2BF23BC300465D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E843C2BF23BC300465D42 /* AppDelegate.swift */; };
 		E28E843F2BF23BC300465D42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E843E2BF23BC300465D42 /* SceneDelegate.swift */; };
-		E28E84412BF23BC300465D42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E84402BF23BC300465D42 /* ViewController.swift */; };
 		E28E84462BF23BC500465D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28E84452BF23BC500465D42 /* Assets.xcassets */; };
 		E28E84492BF23BC500465D42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28E84472BF23BC500465D42 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -21,10 +22,11 @@
 		E23CE1382BF4B3FA00512AB1 /* RecipesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesList.swift; sourceTree = "<group>"; };
 		E23CE13A2BF4C6A800512AB1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E23CE13C2BF4D21500512AB1 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		E2426B882BF6077E00E15E40 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		E2426B8A2BF607B200E15E40 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		E28E84392BF23BC300465D42 /* RecipesSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipesSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28E843C2BF23BC300465D42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28E843E2BF23BC300465D42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E28E84402BF23BC300465D42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E28E84452BF23BC500465D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E28E84482BF23BC500465D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E28E844A2BF23BC500465D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,12 +62,13 @@
 		E28E843B2BF23BC300465D42 /* RecipesSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E2426B882BF6077E00E15E40 /* ContentViewController.swift */,
 				E28E843C2BF23BC300465D42 /* AppDelegate.swift */,
 				E23CE13A2BF4C6A800512AB1 /* Main.storyboard */,
 				E23CE13C2BF4D21500512AB1 /* DetailVC.swift */,
+				E2426B8A2BF607B200E15E40 /* PageViewController.swift */,
 				E23CE1382BF4B3FA00512AB1 /* RecipesList.swift */,
 				E28E843E2BF23BC300465D42 /* SceneDelegate.swift */,
-				E28E84402BF23BC300465D42 /* ViewController.swift */,
 				E28E84452BF23BC500465D42 /* Assets.xcassets */,
 				E28E84472BF23BC500465D42 /* LaunchScreen.storyboard */,
 				E28E844A2BF23BC500465D42 /* Info.plist */,
@@ -145,9 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E23CE13D2BF4D21500512AB1 /* DetailVC.swift in Sources */,
-				E28E84412BF23BC300465D42 /* ViewController.swift in Sources */,
+				E2426B8B2BF607B200E15E40 /* PageViewController.swift in Sources */,
 				E28E843D2BF23BC300465D42 /* AppDelegate.swift in Sources */,
 				E28E843F2BF23BC300465D42 /* SceneDelegate.swift in Sources */,
+				E2426B892BF6077E00E15E40 /* ContentViewController.swift in Sources */,
 				E23CE1392BF4B3FA00512AB1 /* RecipesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,8 +11,6 @@ import WebKit
 class DetailVC: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var forwardButton: UIButton!
     
     var url = ""
     
@@ -24,19 +22,7 @@ class DetailVC: UIViewController {
 
         webView.load(request)
         webView.allowsBackForwardNavigationGestures = true
-        backButton.isEnabled = webView.canGoBack
-        forwardButton.isEnabled = webView.canGoForward
-    }
-    @IBAction func backButtonPressed(_ sender: UIButton) {
-        if webView.canGoBack {
-            webView.goBack()
-        }
     }
     
-    @IBAction func forwardButtonPressed(_ sender: UIButton) {
-        if webView.canGoForward {
-            webView.goForward()
-        }
-    }
 }
 

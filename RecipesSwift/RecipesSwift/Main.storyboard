@@ -48,55 +48,90 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ff-A6-wZC">
-                                <rect key="frame" x="0.0" y="54" width="393" height="788"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yC-91-LaJ">
-                                <rect key="frame" x="15.999999999999996" y="20.000000000000004" width="61.666666666666657" height="34.333333333333343"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
-                                <connections>
-                                    <action selector="backButtonPressed:" destination="Zt3-Wb-Ocd" eventType="touchUpInside" id="jaL-BJ-Mvt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBT-r7-yYw">
-                                <rect key="frame" x="290" y="20.000000000000004" width="86.333333333333314" height="34.333333333333343"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Forward"/>
-                                <connections>
-                                    <action selector="forwardButtonPressed:" destination="Zt3-Wb-Ocd" eventType="touchUpInside" id="x45-vX-Os4"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xpu-aL-ayx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uBT-r7-yYw" firstAttribute="top" secondItem="xpu-aL-ayx" secondAttribute="top" constant="20" id="A3z-mN-SXA"/>
-                            <constraint firstItem="uBT-r7-yYw" firstAttribute="leading" secondItem="3yC-91-LaJ" secondAttribute="trailing" constant="212.33333333333334" id="BMl-0O-VgB"/>
                             <constraint firstItem="3Ff-A6-wZC" firstAttribute="bottom" secondItem="xpu-aL-ayx" secondAttribute="bottom" id="CAy-GW-gjj"/>
                             <constraint firstItem="3Ff-A6-wZC" firstAttribute="leading" secondItem="xpu-aL-ayx" secondAttribute="leading" id="LTV-d0-V5M"/>
-                            <constraint firstItem="3yC-91-LaJ" firstAttribute="top" secondItem="xpu-aL-ayx" secondAttribute="top" constant="20" id="ODD-4U-pQY"/>
                             <constraint firstItem="3Ff-A6-wZC" firstAttribute="trailing" secondItem="xpu-aL-ayx" secondAttribute="trailing" id="QR8-u0-Odh"/>
-                            <constraint firstItem="3yC-91-LaJ" firstAttribute="leading" secondItem="xpu-aL-ayx" secondAttribute="leading" constant="16" id="SiZ-8M-NWm"/>
-                            <constraint firstItem="3Ff-A6-wZC" firstAttribute="top" secondItem="xpu-aL-ayx" secondAttribute="top" constant="54" id="Vk6-sE-vWL"/>
-                            <constraint firstItem="3Ff-A6-wZC" firstAttribute="top" secondItem="uBT-r7-yYw" secondAttribute="bottom" constant="-0.33333333333334281" id="fh6-5b-rkq"/>
-                            <constraint firstItem="3Ff-A6-wZC" firstAttribute="top" secondItem="3yC-91-LaJ" secondAttribute="bottom" constant="-0.33333333333334281" id="oh8-Ip-DoO"/>
-                            <constraint firstItem="xpu-aL-ayx" firstAttribute="trailing" secondItem="uBT-r7-yYw" secondAttribute="trailing" constant="16.666666666666686" id="u4n-wn-EmY"/>
+                            <constraint firstItem="3Ff-A6-wZC" firstAttribute="top" secondItem="xpu-aL-ayx" secondAttribute="top" id="oeT-vf-dbU"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="3yC-91-LaJ" id="nWe-l6-k2x"/>
-                        <outlet property="forwardButton" destination="uBT-r7-yYw" id="tj0-Zs-Mtq"/>
                         <outlet property="webView" destination="3Ff-A6-wZC" id="0DW-X3-eYm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOw-yi-zNX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="571.75572519083971" y="-67.605633802816911"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="6Z8-fH-OvH">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="rGx-3t-1mp" customClass="PageViewController" customModule="RecipesSwift" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWs-Pn-dmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257" y="-68"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="9cg-sb-qmr">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" id="7sz-NK-6eO" customClass="ContentViewController" customModule="RecipesSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LVB-RA-IAn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Recipe List!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBK-6N-187">
+                                <rect key="frame" x="16" y="207" width="361" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="Hed-UY-2Lm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5I4-n0-Shm">
+                                <rect key="frame" x="142" y="366" width="108" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7eA-Fp-Zd5">
+                                <rect key="frame" x="134" y="792" width="116" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rLl-Wk-5Bs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eBK-6N-187" firstAttribute="leading" secondItem="rLl-Wk-5Bs" secondAttribute="leading" constant="16" id="B6M-Ww-pZn"/>
+                            <constraint firstItem="eBK-6N-187" firstAttribute="top" secondItem="rLl-Wk-5Bs" secondAttribute="top" constant="148" id="URb-Ku-XF7"/>
+                            <constraint firstItem="5I4-n0-Shm" firstAttribute="leading" secondItem="rLl-Wk-5Bs" secondAttribute="leading" constant="142" id="Xvf-oC-dLx"/>
+                            <constraint firstItem="rLl-Wk-5Bs" firstAttribute="bottom" secondItem="5I4-n0-Shm" secondAttribute="bottom" constant="332" id="cUy-Em-Aqd"/>
+                            <constraint firstItem="rLl-Wk-5Bs" firstAttribute="trailing" secondItem="5I4-n0-Shm" secondAttribute="trailing" constant="143" id="dLK-AF-c1D"/>
+                            <constraint firstItem="rLl-Wk-5Bs" firstAttribute="trailing" secondItem="eBK-6N-187" secondAttribute="trailing" constant="16" id="kBP-i2-dqE"/>
+                            <constraint firstItem="5I4-n0-Shm" firstAttribute="top" secondItem="eBK-6N-187" secondAttribute="bottom" constant="123" id="wcv-r2-LGw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emojjiLabel" destination="5I4-n0-Shm" id="YQC-U8-xH7"/>
+                        <outlet property="pageControl" destination="7eA-Fp-Zd5" id="s1d-Qb-ezB"/>
+                        <outlet property="presentTextLabel" destination="eBK-6N-187" id="cQL-oc-3KU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKH-FU-Cdo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1936.6412213740457" y="-68.309859154929583"/>
         </scene>
     </scenes>
     <resources>

@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class RecipesList: UITableViewController {
     let recipesNameArray = ["Marry Me Shrimp Pasta",
                             "Turkey Sub",
@@ -29,10 +31,19 @@ class RecipesList: UITableViewController {
                             "Twix Pie": "https://www.allrecipes.com/twix-pie-recipe-7563548",
                             "Cannoli Cream Pie": "https://www.allrecipes.com/cannoli-cream-pie-recipe-8416107",
                             "Hot Dog Burnt Ends": "https://www.allrecipes.com/hot-dog-burnt-ends-recipe-8642721"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        startPresentation()
+    }
+    func startPresentation() {
+        if let pageViewController = storyboard?.instantiateViewController(withIdentifier: "PageViewController") as? PageViewController {
+            present(pageViewController, animated: true, completion: nil)
+        }
+    }
     // MARK: - Table view data source
     
 
